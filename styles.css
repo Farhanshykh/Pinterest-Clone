@@ -446,6 +446,7 @@ nav .red {
     .box-text, .box-text-1, .box-text-2 {
         text-align: center;
         left: 2%;
+        top: 180px;
     }
     .box-text .lg-font {
         font-size: 16px;
@@ -458,7 +459,7 @@ nav .red {
     }
     .boxes .box, .box-1, .box-2 {
         height: 300px;
-        width: 120px;
+        width: 100px;
     }
     .img-text {
         left: -145px;
