@@ -434,8 +434,8 @@ nav .red {
         width: 100%;
         gap: 20px;
     }
-    .img-text {
-        left: -90px;
+    .first-pic .img-text {
+        left: -175px;
     }
     .img-text p {
         font-size: 12px;
@@ -459,7 +459,7 @@ nav .red {
     }
     .boxes .box, .box-1, .box-2 {
         height: 300px;
-        width: 90px;
+        width: 100px;
     }
     .img-text {
         left: -145px;
