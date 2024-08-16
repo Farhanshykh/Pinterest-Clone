@@ -13,7 +13,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: cadetblue;
 }
 
 nav a:hover {
@@ -433,6 +432,7 @@ nav .red {
     }
     .sidebar {
         width: 100%;
+        gap: 20px;
     }
     .img-text {
         left: -90px;
@@ -458,10 +458,13 @@ nav .red {
     }
     .boxes .box, .box-1, .box-2 {
         height: 300px;
-        width: 160px;
+        width: 120px;
     }
     .img-text {
-        left: -50px;
+        left: -145px;
+    }
+    .img-text p {
+        font-size: 10px;
     }
     .dessert {
         width: 180px;
@@ -478,7 +481,8 @@ nav .red {
     .pics {
         width: 100%;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 8px;
+        justify-content: center;
     }
     .pics-1, .pics-2, .pics-3, .pics-4, .pics-5 {
         width: 160px;
