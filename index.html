@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pinterest Clone</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Assets/Pinterest-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Assets/Pinterest-logo.png" alt="">
+            <h2>Pinterest</h2>
+        </div>
+        <h4 class="hideOnMobile">Watch</h4>
+        <h4 class="hideOnMobile">Explore</h4>
+        <div class="search-bar" class="hideOnMobile">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for easy dinners, fashion, etc." class="hideOnMobile">
+        </div>
+        <div class="buttons">
+        <p class="grey hideOnMobile">Log in</p>
+        <p class="red hideOnMobile">Sign up</p>
+    </div>
+        <div class="arrow" class="hideOnMobile">
+            <i class="fa-solid fa-caret-down" style="color: #c1c1c3;" class="hideOnMobile"></i>
+        </div>
+        <div class="menu-icon menu-button" onclick="showSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </div>
+        <div class="sidebar">
+        <div class="logo" onclick="hideSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            <h2>Pinterest</h2>
+        </div>
+        <h4><a href="#">Watch</a></h4>
+        <h4><a href="#">Explore</a></h4>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for easy dinners, fashion, etc.">
+        </div>
+        <div class="buttons">
+        <p class="grey"><a href="#">Log in</a></p>
+        <p class="red"><a href="#">Sign up</a></p>
+    </div>
+        <div class="arrow">
+            <i class="fa-solid fa-caret-down" style="color: #c1c1c3;"></i>
+        </div>
+    </div>
+    </nav>
+    <div class="header">
+        <div class="first-pic">
+        <img src="Assets/1.jpg" alt="">
+        <div class="img-text">
+            <button>Explore</button><br><br>
+            <h1>Food and Drinks</h1><br>
+            <p>Meal prep doesn’t have to be boring. Get inspired by fresh seasonal recipes, stunning <br>food photography, and more.</p>
+        </div>
+    </div>
+    <div class="explore">
+        <h1>Explore Food and drink articles</h1>
+        <div class="boxes">
+            <div class="box">
+                <div class="box-text">
+                    <p>Bold bites</p>
+                    <p class="lg-font">Savory food combos to try</p>
+                </div>
+            </div>
+            <div class="box-1">
+                <div class="box-text-1">
+                    <p>Happy Fourth</p>
+                    <p class="lg-font">Classic summer recipes to try</p>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="box-text-2">
+                    <p>Summer spreads</p>
+                    <p class="lg-font">Recipes for a perfect picnic</p>
+                </div>
+            </div>
+        </div>
+        <button>See more articles</button>
+    </div>
+    </div>
+    <div class="related">
+        <h2>Related interests</h2>
+        <div class="inner">
+            <div class="dessert">
+                <div class="dessert-text">
+                <h2>Dessert</h2>
+            </div>
+            </div>
+            <div class="meal">
+                <div class="meal-text">
+                <h2>Meal Planning</h2>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-heading">
+        <h2>Ideas Like this</h2>
+    </div>
+    <div class="pics">
+        <div class="pics-1">
+            <img src="Assets/main-1.jpg" alt="">
+            <p>Crêpes soufflées japonaises <br>traditionnelles moelleuses</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br><br>
+            <img src="Assets/main-2.jpg" alt="">
+            <p>53 Dirt Cheap Meals for Frugal <br>Families on a Tight Food Budget</p><br><br>
+            <img src="Assets/main-3.jpg" alt="">
+            <p>The Perfect Salty, Crispy Roasted <br> Hasselback Potatoes</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-4.jpg" alt="">
+            <p>Pizza Dough recipe – best ever <br> homemade pizza!</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-5.jpg" alt="">
+            <p>FRIED SPAGHETTI SAUSAGES</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="pics-2">
+            <img src="Assets/main-2-1.jpg" alt="">
+            <p>How to make electrolyte water <br>The Dumbbelle</p><br><br>
+            <img src="Assets/main-2-2.jpg" alt="">
+            <p>Best French Toast Ever</p><br><br>
+            <img src="Assets/main-2-3.jpg" alt="">
+            <p>Broccoli Salad</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-2-4.jpg" alt="">
+            <p>Stovetop Creamy Mac and Cheese <br>Recipe - Pumpkin 'N Spice</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br><br>
+            <img src="Assets/main-2-5.jpg" alt="">
+            <p>Brie Panini</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br><br>
+        </div>
+        <div class="pics-3">
+            <img src="Assets/main-3-1.jpg" alt=""><br>
+            <p>10 Foods That Burns Belly Fat Fast</p><br><br>
+            <img src="Assets/main-3-2.jpg" alt="">
+            <p>Best Shakshuka Recipe (Easy & <br>Traditional) | Downshiftology</p><br><br>
+            <img src="Assets/main-3-3.jpg" alt="">
+            <p>7 SCRUMPTIOUS KID-FRIENDLY <br>CORN RECIPES</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br><br>
+            <img src="Assets/main-3-4.jpg" alt="">
+            <p>Best Homemade Lemonade <br>Recipe ever</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-3-5.jpg" alt="">
+            <p>Classic Gazpacho</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-3-6.jpg" alt="">
+            <p>Melt-In-Your-Mouth Italian <br>Meatballs</p>
+        </div>
+        <div class="pics-4">
+            <img src="Assets/main-4-1.jpg" alt="">
+            <p>Mango Smoothie</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-4-2.jpg" alt="">
+            <p>Zuppa Toscana Recipe (a La Olive <br> Garden)</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-4-3.jpg" alt="">
+            <p>Homemade Apple Cider <br>Recipe</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-4-4.jpg" alt="">
+            <p>Beef and Broccoli <br>Recipe</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br><br>
+            <img src="Assets/main-4-5.jpg" alt="">
+            <p>Sweet Street Corn</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="pics-5">
+            <img src="Assets/main-5-1.jpg" alt="">
+            <p>Better Than Box Mix Fudge <br>Brownies - Butter Blondie</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-5-2.jpg" alt="">
+            <p>Make any Frozen fruit Smoothie!</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-5-3.jpg" alt="">
+            <p>Fast and easy rice pudding recipe - homemade mastery</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <img src="Assets/main-5-4.jpg" alt="">
+            <p>How to make Whipped Coffe <br>Three different ways</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i><br><br>
+            <img src="Assets/main-5-5.jpg" alt="">
+            <p>EASY CHOCOLATE CHIP BANANA BREAD</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+    </div>
+
+
+    <script>
+        function showSidebar () {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar () {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = 'none';   
+        }
+    </script>
+</body>
+</html>

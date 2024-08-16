@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+nav a:hover {
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px;
+    gap: 10px;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.sidebar div {
+    width: 100%;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar svg {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #cc0000;
+}
+
+.logo > img {
+    height: 28px;
+    width: 28px;
+}
+
+nav > h2 {
+    color: #cc0000;
+}
+
+.search-bar {
+    height: 80px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 38px;
+    width: 100%;
+    padding-left: 40px;
+    background-color: lightgrey;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.search-bar > i {
+    position: absolute;
+    z-index: 2;
+    left: 387px;
+    color: #969191;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .grey {
+    background-color: #cfcfcf8e;
+    padding: 12px 8px 12px 8px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+nav .red {
+    background-color: #cc0000;
+    padding: 12px 8px 12px 8px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.header {
+    height: auto;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.header > .first-pic {
+    height: fit-content;
+    width: 97%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.first-pic > img {
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.first-pic::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.482);
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.img-text {
+    height: 200px;
+    width: 700px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    text-align: center;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.img-text button{
+    border-radius: 20px;
+    padding: 8px;
+    border: none;
+}
+
+.img-text button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}   
+
+.explore {
+    height: 500px;
+    width: 97%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.explore h1 {
+    font-weight: 400;
+}
+
+.boxes {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    background-image: url(Assets/2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.482);
+}
+
+.box-1 {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    background-image: url(Assets/3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.box-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.482);
+}
+
+.box-2 {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    background-image: url(Assets/4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.box-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.482);
+}
+
+.explore button {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+}
+
+.box-text {
+    position: absolute;
+    top: 210px;
+    left: 15%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.box-text-1 {
+    position: absolute;
+    top: 210px;
+    left: 15%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.box-text-2 {
+    position: absolute;
+    top: 210px;
+    left: 15%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.lg-font {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.related {
+    height: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.related > h2 {
+    font-weight: 400;
+}
+
+.inner {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.dessert {
+    height: 60%;
+    width: 240px;
+    background-image: url(Assets/5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+
+.dessert::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.482);
+    border-radius: 20px;
+}
+
+.dessert-text {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    color: #fff;
+    z-index: 2;
+}
+
+.meal {
+    height: 60%;
+    width: 240px;
+    background-image: url(Assets/6.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+
+.meal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.482);
+    border-radius: 20px;
+}
+
+.meal-text {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    color: #fff;
+    z-index: 2;
+}
+
+.main-heading {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-heading > h2 {
+    font-weight: 400;
+}
+
+.pics {
+    height: auto;
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.pics img {
+    border-radius: 20px;
+}
+
+.pics i {
+    font-size: 12px;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .search-bar i {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        width: 100%;
+    }
+    .header > .first-pic {
+        width: 97%;
+        text-align: center;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .img-text {
+        left: -90px;
+    }
+    .img-text p {
+        font-size: 12px;
+    }
+    .explore h1 {
+        font-size: 18px;
+    }
+    .box-text, .box-text-1, .box-text-2 {
+        text-align: center;
+        left: 2%;
+    }
+    .box-text .lg-font {
+        font-size: 16px;
+    }
+    .box-text-1 .lg-font {
+        font-size: 16px;
+    }
+    .box-text-2 .lg-font {
+        font-size: 16px;
+    }
+    .boxes .box, .box-1, .box-2 {
+        height: 300px;
+        width: 160px;
+    }
+    .img-text {
+        left: -50px;
+    }
+    .dessert {
+        width: 180px;
+    }
+    .meal {
+        width: 180px;
+    }
+    .dessert-text {
+        left: 50px;
+    }
+    .meal-text {
+        left: 15px;
+    }
+    .pics {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .pics-1, .pics-2, .pics-3, .pics-4, .pics-5 {
+        width: 160px;
+    }
+    .pics img {
+        width: 150px;
+    }
+    .pics p {
+        font-size: 10px;
+    }
+}
